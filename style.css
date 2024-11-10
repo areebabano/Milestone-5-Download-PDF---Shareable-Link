@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 30px;
+    color: #333;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.page-title {
+    text-align: center;
+    color: #0a2233f0;
+    font-size: 32px;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid darkgoldenrod;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid darkgoldenrod;
+}
+
+.section-title {
+    color: #0a2233f0;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title::before {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background: darkgoldenrod;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #0a2233f0;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: darkgoldenrod;
+    box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1);
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.generate-btn{
+    background-color: #0a2233f0;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin: 40px auto;
+    transition: all 0.3s ease;
+}
+
+.generate-btn:hover{
+    background-color: darkgoldenrod;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.resume {
+    display: block; /* Set to block for visibility */
+    background: white;
+    color: #0a2233;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a2233;
+    padding: 20px;
+    color: white;
+}
+
+.header {
+    max-width: 60%;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase; /* Makes the name uppercase */
+}
+
+.contact-details, .additional-info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+    margin-top: 10PX;
+    font-size: 16px;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+#resumeLocation {
+    text-transform: capitalize;
+}
+
+.contact-details i, .additional-info i {
+    color: darkgoldenrod;
+    margin-right: 5px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.portfolio-link, .social-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #081823f0;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.portfolio-link:hover ,.social-link:hover {
+    background-color: #133954;
+}
+
+.image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.resume .section {
+    margin-top: 30px;
+}
+
+.resume .section-title {
+    color: #0a2233f0;
+    font-weight: 700;
+    border-bottom: 4px solid darkgoldenrod;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.resume .experience-item, 
+.resume .education-item {
+    /* margin-bottom: 15px; */
+    padding: 10px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+
+.resume .job-title, 
+.resume .degree {
+    color: #0a2233f0;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform:capitalize;
+}
+
+.resume .job-title i, 
+.resume .degree i {
+    color: darkgoldenrod;
+    /* font-size: 20px; */
+    /* margin-bottom: 5px; */
+}
+
+.resume .company, 
+.resume .school {
+    color: black;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.resume .date {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.resume .description {
+    /* margin-top: 20px; */
+    color: #444;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+#resumeSummary {
+    margin-top: 20px;
+    color: #444;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+.resume .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.resume .skill {
+    background: #f3f3f3;
+    color: #0a2233f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform:uppercase;
+}
+
+.resume .skill:hover {
+    background-color: #0a2233;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .form-container,
+    .resume {
+        padding: 20px;
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #left, #right {
+    width: 45%; /* You can adjust the width as needed */
+    /* margin-top: 0%;
+    margin-bottom: 0%; */
+  }
+
+  /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.container {
+    /* width: 80%; */
+    /* max-width: 900px; */
+    background-color: #fff;
+    /* padding: 10px; */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@page {
+    margin-top: 120px;  /* Ensure there’s enough space for the header */
+}
+
+
+header {
+    /* height: 120px;  Set a fixed height */
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media print {
+    body {
+        padding: 40px;
+    }
+
+    header {
+        position: fixed;  /* Keeps the header fixed at the top during print */
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 200%;
+    }
+
+    .resume {
+        margin-top: 100px;  /* Ensure the content starts below the header */
+        margin-bottom: 20px
+    }
+}
+
+
+
+header h1 {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+header input {
+    padding: 10px;
+    width: 60%;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Resume Sections */
+.resume {
+    margin-top: 50px;
+}
+
+.resume-header,
+.experience,
+.education {
+    margin-bottom: 20px;
+}
+
+.resume-header h2 {
+    font-size: 1.8rem;
+}
+
+.resume-header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.experience h3, .education h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.experience ul, .education ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience ul li, .education ul li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* Centering the action buttons within the form */
+.action-buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 8px; /* Adds space between the buttons */
+    margin-top: 20px; /* Adds space above the buttons */
+}
+
+.download-btn, .share-btn {
+    background-color: #0a2233f0;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover, .share-btn:hover {
+    background-color: darkgoldenrod;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* .action-btn {
+    padding: 10px 20px;
+    background-color:#0a2233;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+} */
+
+/* .action-btn:hover {
+    background-color: darkgoldenrod;
+} */
+
+.action-btn i {
+    margin-right: 8px;
+}
+
+/* Share Link Dialog */
+.share-link-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    z-index: 999;
+}
+
+.share-link-box {
+    text-align: center;
+}
+
+.share-link-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.copy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copy-btn i {
+    margin-right: 8px;
+}
+
+.copy-btn:hover {
+    background-color: #218838;
+}
+
+.share-note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.close-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn i {
+    margin-right: 8px;
+}
+
+.close-btn:hover {
+    background-color: #c82333;
+}
+
+
