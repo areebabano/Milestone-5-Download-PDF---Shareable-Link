@@ -58,7 +58,7 @@ Once complete, users can:
 
 # 🏗 Project Architecture
 
-```text
+
 User Input Form
       ↓
 Real-Time DOM Update
@@ -72,23 +72,27 @@ Shareable Public Link
 
 Since this was my first hackathon, several challenges pushed me beyond my comfort zone:
 
-1. Time Pressure
+---
+
+## 1. Time Pressure
 
 Building a complete project within a deadline taught me how to prioritize and ship fast.
 
-2. Real-Time Preview Logic
+3# 2. Real-Time Preview Logic
 
 Updating the resume dynamically while users typed required strong DOM manipulation.
 
-3. PDF Generation
+## 3. PDF Generation
 
 Ensuring the downloaded PDF looked clean and professional was challenging.
 
-4. Deployment
+## 4. Deployment
 
 Making the app live on Vercel and testing shareable links taught me deployment fundamentals.
 
-📚 What I Learned
+---
+
+# 📚 What I Learned
 
 Through this project I learned:
 
@@ -99,7 +103,9 @@ Better TypeScript fundamentals
 Debugging efficiently
 Deploying live applications
 Product thinking and user experience design
-🏆 Results
+---
+
+# 🏆 Results
 
 ✔ Successfully completed my first hackathon project
 ✔ Built and deployed a live web app
@@ -107,14 +113,8 @@ Product thinking and user experience design
 ✔ Learned how to deliver under pressure
 ✔ Built a real-world useful product
 
-📸 Screenshots
-
-Add screenshots here:
-
-![Home Page](./screenshots/home.png)
-![Resume Preview](./screenshots/preview.png)
-![Generated Resume](./screenshots/resume.png)
-🚀 Run Locally
+---
+# 🚀 Run Locally
 
 Clone the project:
 
