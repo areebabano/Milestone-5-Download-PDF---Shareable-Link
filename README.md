@@ -68,3 +68,77 @@ Resume Preview Rendering
 PDF Export Functionality
       ↓
 Shareable Public Link
+🚧 Challenges Faced
+
+Since this was my first hackathon, several challenges pushed me beyond my comfort zone:
+
+1. Time Pressure
+
+Building a complete project within a deadline taught me how to prioritize and ship fast.
+
+2. Real-Time Preview Logic
+
+Updating the resume dynamically while users typed required strong DOM manipulation.
+
+3. PDF Generation
+
+Ensuring the downloaded PDF looked clean and professional was challenging.
+
+4. Deployment
+
+Making the app live on Vercel and testing shareable links taught me deployment fundamentals.
+
+📚 What I Learned
+
+Through this project I learned:
+
+How to work under hackathon deadlines
+Building complete frontend applications
+Real-time DOM manipulation
+Better TypeScript fundamentals
+Debugging efficiently
+Deploying live applications
+Product thinking and user experience design
+🏆 Results
+
+✔ Successfully completed my first hackathon project
+✔ Built and deployed a live web app
+✔ Improved confidence in TypeScript
+✔ Learned how to deliver under pressure
+✔ Built a real-world useful product
+
+📸 Screenshots
+
+Add screenshots here:
+
+![Home Page](./screenshots/home.png)
+![Resume Preview](./screenshots/preview.png)
+![Generated Resume](./screenshots/resume.png)
+🚀 Run Locally
+
+Clone the project:
+
+git clone https://github.com/areebabano/Milestone-5-Download-PDF---Shareable-Link.git
+
+Go to project directory:
+
+cd Milestone-5-Download-PDF---Shareable-Link
+
+Install dependencies (if needed):
+
+npm install
+
+Run project:
+
+npm run dev
+👩‍💻 Author
+
+Areeba Bano
+Frontend Developer | TypeScript Developer | GenAI Student
+
+GitHub: https://github.com/areebabano
+
+⭐ Support
+
+If you like this project, please give it a star ⭐ on GitHub.
+```
